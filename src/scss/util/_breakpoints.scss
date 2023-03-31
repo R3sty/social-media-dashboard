@@ -1,0 +1,27 @@
+@use 'functions' as f;
+
+$breakpoints-up: (
+    "medium": f.em(700),
+    "large": f.em(900),
+    "xlarge": f.em(1440)
+);
+
+$breakpoints-down: (
+    "small": f.em(700),
+    "medium":f.em(900),
+    "large":f.em(1440)
+);
+
+// Styles that apply only to screens larger than $size
+@mixin breakpoint($size) {
+    @media(min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+// Styles that apply only to screens smaller than $size
+@mixin breakpoint-down($size) {
+    @media(max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

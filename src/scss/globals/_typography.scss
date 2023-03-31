@@ -1,0 +1,21 @@
+@use '../util/' as util;
+
+body {
+    font-family: util.$inter;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--text);
+    font-size: util.rem(20);
+}
+
+p {
+    color: var(--error);
+    font-size: util.rem(10);
+}
