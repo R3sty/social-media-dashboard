@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://github.com/R3sty/social-media-dashboard)
+- [Live-site](https://r3sty.github.io/social-media-dashboard)
 
 ## My process
 
@@ -58,6 +58,6 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@R3sty](https://www.frontendmentor.io/profile/R3sty)
-- Twitter - [@yourusername](https://twitter.com/R3XIST)
+- Twitter - [@R3xist](https://twitter.com/R3XIST)
 
 ## Acknowledgments
