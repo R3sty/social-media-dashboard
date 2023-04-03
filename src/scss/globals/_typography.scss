@@ -1,7 +1,9 @@
 @use '../util/' as util;
 
-body {
-    font-family: util.$inter;
+h1,
+h2,
+h3 {
+    margin-top: 0;
 }
 
 a,

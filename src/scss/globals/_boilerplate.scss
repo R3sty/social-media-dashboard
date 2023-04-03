@@ -2,7 +2,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 100%
+    font-size: 100%;
 }
 
 //ensures that all elements on the page have the same box-sizing property as the HTML element, which is set to "border-box".
@@ -15,4 +15,5 @@ html {
 body {
     margin: util.em(0);
     padding: util.em(0);
+    font-family: var(--inter);
 }
