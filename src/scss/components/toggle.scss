@@ -1,0 +1,11 @@
+@use '../util/' as util;
+
+.toggle {
+
+    &__button {
+        width: util.rem(16);
+        height: util.rem(16);
+        border-radius: util.rem(16);
+        background-color: var(--toggle);
+    }
+}
