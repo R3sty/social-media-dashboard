@@ -1,43 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
-interface ToggleSwitchProps {
-	disabled?: boolean;
-	checked: boolean;
-	onChange: (checked: boolean) => void;
-}
-
-const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
-	disabled = false,
-	checked,
-	onChange,
-}) => {
-	const [isChecked, setIsChecked] = useState(checked);
-
-	const handleToggle = () => {
-		if (!disabled) {
-			setIsChecked(!isChecked);
-			onChange(!isChecked);
-		}
-	};
-
+const ToggleSwitch = () => {
 	return (
-		<div
-			className={`toggle-switch ${disabled ? 'toggle-switch-disabled' : ''}`}
+		<fieldset
+			className="header__toggle toggle"
+			aria-label="theme toggle"
+			role="radiogroup"
 		>
-			<input
-				type='checkbox'
-				className='toggle-switch-checkbox'
-				checked={isChecked}
-				onChange={handleToggle}
-			/>
-			<label className='toggle-switch-label'>
-				<span className='toggle-switch-inner'>
-					<span className='toggle-switch-active'>Yes</span>
-					<span className='toggle-switch-inactive'>No</span>
-				</span>
-				<span className='toggle-switch-switch' />
-			</label>
-		</div>
+			<label htmlFor="light">Light</label>
+			<div className="toggle__wrapper">
+				<input type="radio" name="theme" id="light" checked />
+				<input type="radio" name="theme" id="dark" />
+				<span aria-hidden="true" className="toggle__background"></span>
+				<span aria-hidden="true" className="toggle__button"></span>
+			</div>
+			<label htmlFor="dark">Dark</label>
+		</fieldset>
 	);
 };
 

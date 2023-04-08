@@ -1,15 +1,15 @@
 @use 'functions' as f;
-
+//mobile first
 $breakpoints-up: (
-    "medium": f.em(700),
-    "large": f.em(900),
+    "medium": f.em(640),
+    "large": f.em(950),
     "xlarge": f.em(1440)
 );
-
+//desktop first
 $breakpoints-down: (
-    "small": f.em(700),
-    "medium":f.em(900),
-    "large":f.em(1440)
+    "small": f.em(639),
+    "medium":f.em(949),
+    "large":f.em(1399)
 );
 
 // Styles that apply only to screens larger than $size
