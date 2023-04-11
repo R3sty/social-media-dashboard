@@ -1,1 +1,0 @@
-html{box-sizing:border-box;font-size:100%}*,*:before,*:after{box-sizing:inherit}body{margin:0;padding:0}body{font-family:Inter,sans-serif}a,a:visited,a:active{text-decoration:none}h1{color:var(--text);font-size:1.25rem}p{color:var(--error);font-size:.625rem}:root{--text: hsl(194, 18%, 24%);--error: hsl(15, 63%, 42%)}
