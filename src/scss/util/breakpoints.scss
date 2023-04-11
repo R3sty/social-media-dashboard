@@ -2,13 +2,13 @@
 //mobile first
 $breakpoints-up: (
     "medium": f.em(640),
-    "large": f.em(950),
+    "large": f.em(1110),
     "xlarge": f.em(1440)
 );
 //desktop first
 $breakpoints-down: (
     "small": f.em(639),
-    "medium":f.em(949),
+    "medium":f.em(1109),
     "large":f.em(1399)
 );
 

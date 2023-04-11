@@ -1,5 +1,103 @@
 @use '../util/' as util;
 
-.card {
-    padding: util.rem(20);
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+        width: util.rem(255);
+        height: util.rem(216);
+        background-color: var(--dark-card);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        //border-top: util.rem(10) var(--facebook);
+
+        &__platform {
+            display: flex;
+            align-items: center;
+            margin-bottom: util.rem(20);
+            justify-content: center;
+
+            & .card__icon {
+                margin-right: 10px;
+                text-align: center;
+
+            }
+
+            & .card__username {
+                color: var(--dark-text1);
+                font-style: normal;
+                font-weight: 700;
+                font-size: util.rem(12);
+                line-height: util.rem(15);
+            }
+        }
+
+        &__followers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &>div:nth-child(1) {
+                color: var(--dark-text2);
+                font-style: normal;
+                font-weight: 700;
+                font-size: util.rem(56);
+                line-height: util.rem(48);
+                margin-bottom: util.rem(9);
+            }
+
+            &>div:nth-child(2) {
+                font-style: normal;
+                font-weight: 400;
+                font-size: util.rem(12);
+                line-height: util.rem(15);
+                text-align: center;
+                letter-spacing: util.rem(5);
+                text-transform: uppercase;
+                color: var(--dark-text1);
+            }
+        }
+
+        &__stats {
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            grid-gap: util.rem(5);
+
+            & .trend {
+                text-align: right;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            & .stats_number {
+                font-style: normal;
+                font-weight: 700;
+                font-size: util.rem(12);
+                line-height: util.rem(15);
+                color: var(--limegreen);
+                text-align: left;
+
+            }
+        }
+    }
+
 }

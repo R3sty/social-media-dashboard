@@ -1,9 +1,15 @@
-@use '../util/' as util;
+@use '../util/' as *;
 
 h1,
 h2,
 h3 {
     margin-top: 0;
+}
+
+h1 {
+    @include breakpoint(large) {
+        font-size: rem(28);
+    }
 }
 
 a,
@@ -12,12 +18,7 @@ a:active {
     text-decoration: none;
 }
 
-h1 {
-    color: var(--text);
-    font-size: util.rem(20);
-}
-
 p {
     color: var(--error);
-    font-size: util.rem(10);
+    font-size: rem(10);
 }
