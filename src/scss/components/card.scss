@@ -17,6 +17,23 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .border-facebook {
+        border-top: 4px solid #1877F2;
+    }
+
+    .border-twitter {
+        border-top: 4px solid #1DA1F2;
+    }
+
+    .border-instagram {
+        border-top: 4px solid #C13584;
+    }
+
+    .border-youtube {
+        border-top: 4px solid #FF0000;
+    }
+
+
     .card {
         width: util.rem(255);
         height: util.rem(216);
@@ -93,10 +110,18 @@ main {
                 font-weight: 700;
                 font-size: util.rem(12);
                 line-height: util.rem(15);
-                color: var(--limegreen);
                 text-align: left;
-
             }
+        }
+
+        .card__stats.stats-green .stats_number,
+        .card__stats.stats-green .trend {
+            color: var(--limegreen);
+        }
+
+        .card__stats.stats-red .stats_number,
+        .card__stats.stats-red .trend {
+            color: var(--brightred);
         }
     }
 
