@@ -98,6 +98,7 @@ main {
             grid-auto-flow: column;
             align-items: center;
             grid-gap: util.rem(5);
+           
 
             & .trend {
                 text-align: right;
@@ -113,16 +114,13 @@ main {
                 text-align: left;
             }
         }
-
-        .card__stats.stats-green .stats_number,
-        .card__stats.stats-green .trend {
-            color: var(--limegreen);
-        }
-
-        .card__stats.stats-red .stats_number,
-        .card__stats.stats-red .trend {
-            color: var(--brightred);
-        }
     }
+}
 
+.stats-green {
+    color: var(--limegreen);
+}
+
+.stats-red {
+    color: var(--brightred);
 }

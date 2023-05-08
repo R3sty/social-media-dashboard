@@ -1,0 +1,57 @@
+@use "../util/" as util;
+
+.overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .overview-card {
+    width: util.rem(255);
+    height: util.rem(125);
+    background-color: var(--dark-card);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: util.rem(26);
+    padding-bottom: util.rem(19);
+    padding-inline: util.rem(24);
+
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+
+      .stats-for {
+        font-size: util.rem(14);
+        color: var(--dark-text1);
+      }
+    }
+
+    &__stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: util.rem(19);
+
+      .number{
+        font-size:util.rem(32)
+      }
+
+      .overview-trend {
+        display: flex;
+
+        .trend-icon {
+          display: flex;
+          align-items: center;
+          padding-right: util.rem(4);
+        }
+
+        .percentage {
+          font-style: normal;
+          font-weight: 700;
+          font-size: util.rem(12);
+          line-height: util.rem(15);
+        }
+      }
+    }
+  }
+}

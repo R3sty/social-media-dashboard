@@ -1,12 +1,13 @@
 import React, { ReactNode } from 'react';
 import { dashboardData } from "../dashboard-data";
+import { getStatsColorClassName, formatNumber } from "../utils";
 
 const Cards: React.FC = () => {
 	interface SocialCardProps {
 		socialMedia: string;
 		icon: ReactNode;
 		username: string;
-		followers: number;
+		followers: number | string;
 		trendIcon: ReactNode;
 		figure: number;
 		trend: string;
@@ -31,19 +32,7 @@ const Cards: React.FC = () => {
 
 		const borderColorClassName = getBorderColorClassName();
 
-		const getStatsColorClassName = () => {
-			switch (trend)
-			{
-				case "up":
-					return "stats-green";
-				case "down":
-					return "stats-red";
-				default:
-					return "";
-			}
-		};
-
-		const statsColorClassName = getStatsColorClassName();
+		const statsColorClassName = getStatsColorClassName(trend);
 
 		return (
 			<div className={`card ${borderColorClassName}`}>
@@ -71,7 +60,7 @@ const Cards: React.FC = () => {
 					socialMedia={data.socialMedia}
 					key={index}
 					icon={data.icon}
-					followers={data.followers}
+					followers={formatNumber(data.followers)}
 					username={data.userName}
 					trendIcon={data.trendIcon}
 					figure={data.figure}

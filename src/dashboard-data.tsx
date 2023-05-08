@@ -48,7 +48,7 @@ export const overViewData = [
     trendIcon: icons.upIcon,
     trend: "up",
     figure: 87,
-    percentage: "3%"
+    percentage: 3
   },
   {
     socialMedia: "facebook",
@@ -57,7 +57,7 @@ export const overViewData = [
     trendIcon: icons.downIcon,
     trend: "down",
     figure: 52,
-    percentage: "2%"
+    percentage: 2
   },
   {
     socialMedia: "instagram",
@@ -66,7 +66,7 @@ export const overViewData = [
     trendIcon: icons.upIcon,
     trend: "up",
     figure: 5462,
-    percentage: "2257%"
+    percentage: 2257
   },
   {
     socialMedia: "instagram",
@@ -75,7 +75,7 @@ export const overViewData = [
     trendIcon: icons.upIcon,
     trend: "up",
     figure: 52000,
-    percentage: "1375%"
+    percentage: 1375
   },
   {
     socialMedia: "twitter",
@@ -84,7 +84,16 @@ export const overViewData = [
     trendIcon: icons.upIcon,
     trend: "up",
     figure: 117,
-    percentage: "303%"
+    percentage: 303
+  },
+  {
+    socialMedia: "twitter",
+    icon: icons.twitter,
+    statsFor: "Likes",
+    trendIcon: icons.upIcon,
+    trend: "up",
+    figure: 507,
+    percentage: 553
   },
   {
     socialMedia: "youtube",
@@ -93,7 +102,7 @@ export const overViewData = [
     trendIcon: icons.downIcon,
     trend: "down",
     figure: 107,
-    percentage: "19%"
+    percentage: 19
   },
   {
     socialMedia: "youtube",
@@ -102,6 +111,6 @@ export const overViewData = [
     trendIcon: icons.downIcon,
     trend: "down",
     figure: 1407,
-    percentage: "12%"
+    percentage: 12
   }
 ]
